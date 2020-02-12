@@ -20,10 +20,4 @@ const TodoList = ({todos}) => {
     )
 };
 
-const mapStateToProps = ({visibleTodos}) => {
-    return {
-        todos: visibleTodos
-    }
-};
-
-export default connect(mapStateToProps)(TodoList);
+export default TodoList;

@@ -20,16 +20,8 @@ const toggleImportant = (idTodo) => {
     }
 };
 
-const editVisibleTodos = (searchText) => {
-    return {
-        type: 'EDIT_VISIBLE_TODOS',
-        payload: searchText
-    }
-};
-
 export {
     add,
     remove,
-    toggleImportant,
-    editVisibleTodos
+    toggleImportant
 }

@@ -1,17 +1,14 @@
 import React, {useState} from 'react';
-import {connect} from 'react-redux';
-
-import {editVisibleTodos} from "../../actions";
 
 import './search-panel.css';
 
-const SearchPanel = ({editVisibleTodos}) => {
+const SearchPanel = ({setTextSearchPanel}) => {
 
     const [inputText, setInputText] = useState('');
 
     const onChangeInput = (e) => {
         setInputText(e.target.value);
-        editVisibleTodos(e.target.value); // почему не inputText
+        setTextSearchPanel(e.target.value);
     };
 
     return (
@@ -25,6 +22,4 @@ const SearchPanel = ({editVisibleTodos}) => {
     )
 };
 
-const mapDispatchToProps = {editVisibleTodos};
-
-export default connect(null, mapDispatchToProps)(SearchPanel);
+export default SearchPanel;

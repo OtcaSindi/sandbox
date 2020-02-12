@@ -9,10 +9,9 @@ const InputForm = ({add}) => {
     const [inputText, setInputText] = useState('');
     const onSubmit = (e) => {
         e.preventDefault();
-        add(inputText);
+        inputText && add(inputText);
         setInputText('');
     };
-
 
     return (
         <form onSubmit={onSubmit}>
