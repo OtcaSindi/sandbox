@@ -18,12 +18,11 @@ const TodoList = ({todos}) => {
             }
         </ul>
     )
-
 };
 
-const mapStateToProps = ({todos}) => {
+const mapStateToProps = ({visibleTodos}) => {
     return {
-        todos
+        todos: visibleTodos
     }
 };
 

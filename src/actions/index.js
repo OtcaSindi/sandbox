@@ -13,7 +13,23 @@ const remove = (idTodo) => {
     }
 };
 
+const toggleImportant = (idTodo) => {
+    return {
+        type: 'TOGGLE_IMPORTANT',
+        payload: idTodo
+    }
+};
+
+const editVisibleTodos = (searchText) => {
+    return {
+        type: 'EDIT_VISIBLE_TODOS',
+        payload: searchText
+    }
+};
+
 export {
     add,
-    remove
+    remove,
+    toggleImportant,
+    editVisibleTodos
 }

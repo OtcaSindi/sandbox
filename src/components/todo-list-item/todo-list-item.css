@@ -3,3 +3,7 @@
     justify-content: space-between;
     margin: 2px 0;
 }
+
+.important {
+    color: red;
+}
