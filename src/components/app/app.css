@@ -1,8 +1,10 @@
 body {
     font-size: 18px;
+    margin: 0;
 }
 
-.todo {
+.container {
     width: 400px;
     margin: 0 auto;
+    text-align: center;
 }

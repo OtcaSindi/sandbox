@@ -1,0 +1,9 @@
+.header {
+    height: 50px;
+    width: 400px;
+    background-color: azure;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
